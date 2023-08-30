@@ -10,8 +10,8 @@ function toggLeMode(){
 
     //substituir a img
     if(html.classList.contains("light")){
-        img.setAttribute('src', './assets/img-light.png')
+        img.setAttribute('src', './assets/img2.JPG')
     }else {
-        img.setAttribute('src', './assets/img.png')
+        img.setAttribute('src', './assets/img1.JPG')
     }
 }
