@@ -65,10 +65,13 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   cursor: pointer;
+  animation: volta 0.3s;
+}
+#switch button:hover{
+  outline: 8px solid var(--highlight-color);
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: deslizar 0.4s forwards;
 }
 #switch span {
   display: block;
@@ -124,4 +127,20 @@ ul li a:hover {
 footer {
   padding: 24px 0;
   text-align: center;
+}
+@keyframes deslizar {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes volta {
+  from{
+    left: 50%;
+  }
+  to{
+    right: 0;
+  }
 }
